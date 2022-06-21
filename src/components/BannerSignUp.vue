@@ -6,6 +6,6 @@
 
 <script>
 export default {
-name: 'TheMain',
+name: 'BannerSignUp',
 };
 </script>

@@ -1,0 +1,7 @@
+//voglio importare variables.scss
+@import "./variables";
+@import "~bootstrap/scss/bootstrap";
+
+.bg-nav {
+    background-color: $bg-nav;
+}

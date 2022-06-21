@@ -1,27 +1,30 @@
 <template>
-  <div id="app">
-    <TheHeader/>
-    <TheMain/>
+  <div>
+    <TheNavbar/>
     <TheFooter/>
+    <BannerSignUp/>
   </div>
 </template>
 
 <script>
-import TheHeader from './components/TheHeader.vue'
-import TheMain from './components/TheMain.vue'
+import TheNavbar from './components/TheNavbar.vue'
 import TheFooter from './components/TheFooter.vue'
+import BannerSignUp from './components/BannerSignUp.vue'
 
 export default {
   name: 'App',
   components: {
-    TheHeader,
-    TheMain,
+    TheNavbar,
     TheFooter,
+    BannerSignUp,
   }
 }
 </script>
 
 <style lang="scss">
+@import "assets/scss/main.scss";
+@import "assets/scss/variables.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
