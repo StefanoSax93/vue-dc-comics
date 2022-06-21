@@ -1,6 +1,7 @@
 <template>
   <div>
     <TheNavbar/>
+    <BannerBlue/>
     <TheFooter/>
     <BannerSignUp/>
   </div>
@@ -10,6 +11,7 @@
 import TheNavbar from './components/TheNavbar.vue'
 import TheFooter from './components/TheFooter.vue'
 import BannerSignUp from './components/BannerSignUp.vue'
+import BannerBlue from './components/BannerBlue.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     TheNavbar,
     TheFooter,
     BannerSignUp,
+    BannerBlue
   }
 }
 </script>
