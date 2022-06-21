@@ -8,7 +8,7 @@
             </li>
         </ul>
     </div>
-    <div class="bg-dark py-5 text-white">
+    <div class="bg-second py-5 text-white">
         <div class="container">
             --> Content Goes Here --
         </div>
@@ -77,8 +77,12 @@ data() {
     font-size: 13px;
 
     &:hover {
-        border-bottom: 3px solid $primary;
+        border-bottom: 3px solid $first;
     }
+}
+
+.bg-second {
+    background-color: $second;
 }
 
 </style>
