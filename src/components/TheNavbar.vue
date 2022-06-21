@@ -5,6 +5,7 @@
         <ul class="nav">
             <li class="nav-item" v-for="(link,id) in navLinks" :key="id">
                 <a class="nav-link text-uppercase text-dark fw-bold" aria-current="page" :href="link.href">{{link.name}}</a>
+                <div class="hover-bar"></div>
             </li>
         </ul>
     </div>
@@ -76,9 +77,19 @@ data() {
     border-bottom: 3px solid transparent;
     font-size: 13px;
 
-    &:hover {
-        border-bottom: 3px solid $first;
+    
+    .hover-bar {
+        height: 5px;
+        background-color: $first;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        position: relative;
+        top: 49px;
     }
+
+    &:hover .hover-bar {
+            opacity: 1;
+        }
 }
 
 .bg-second {

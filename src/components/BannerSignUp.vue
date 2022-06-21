@@ -60,6 +60,11 @@ data() {
             text-transform: uppercase;
             font-weight: bold;
         }
+
+        a:hover {
+            transform: scale(1.2);
+            transition: transform .3s ease-in-out;
+        }
     }
     
 </style>

@@ -48,7 +48,10 @@ export default {
 
     .bg-banner-blue {
         background-color: $first;
-
+    .col:hover {
+        transform: scale(1.2);
+        transition: transform .3s ease-in-out;
+    }
         img {
             max-height: 50px;            
         }
