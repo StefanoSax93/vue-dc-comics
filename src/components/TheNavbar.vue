@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="container d-flex justify-content-between align-items-center py-3">
         <img src="/img/dc-logo.png" alt="">
         <ul class="nav">
@@ -7,6 +8,12 @@
             </li>
         </ul>
     </div>
+    <div class="bg-dark py-5 text-white">
+        <div class="container">
+            --> Content Goes Here --
+        </div>
+    </div>
+</div>
 </template>
 
 
