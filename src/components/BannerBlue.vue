@@ -48,6 +48,8 @@ export default {
 
     .bg-banner-blue {
         background-color: $first;
+        position: relative;
+        z-index: 1;
     .col:hover {
         transform: scale(1.2);
         transition: transform .3s ease-in-out;
