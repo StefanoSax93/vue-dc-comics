@@ -8,24 +8,28 @@
                 <div class="mini-banner text-uppercase px-3 py-1">Current Series</div>
                 <div class="row justify-content-center">
                     <div class="col-2" v-for="(slide,id) in slideList" :key="id">
-                        <img :src="slide.thumb" :alt="slide.series" class="thumb">
-                        <h6 class="text-uppercase">{{slide.series}}</h6>
+                        <SlideCard
+                            :slide-url="slide.thumb"
+                            :slide-series="slide.series"
+                        ></SlideCard> 
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-5">
                     <a class="text-uppercase my-btn fs-5 fw-bold px-5 py-2 text-decoration-none" href="">Load more</a>
                 </div>
             </div>
-        </div>
-        
-            
-       
+        </div> 
     </div>
 </template>
 
 <script>
+
+import SlideCard from './SlideCard.vue'
+
 export default {
     name: 'TheSlider',
+
+    components: {SlideCard},
 
     data() {
         return {
