@@ -25,8 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "assets/scss/main.scss";
-@import "assets/scss/variables.scss";
+@import "./assets/scss/main.scss";
 @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 #app {

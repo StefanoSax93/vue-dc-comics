@@ -72,7 +72,7 @@ data() {
 </script>
 
 <style lang="scss">
-@import "../assets/scss/main.scss";
+@import "../assets/scss/variables.scss";
 .nav-item {
     border-bottom: 3px solid transparent;
     font-size: 13px;

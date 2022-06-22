@@ -172,7 +172,7 @@ data() {
 </script>
 
 <style lang="scss">
-@import "../assets/scss/main.scss";
+@import "../assets/scss/variables.scss";
 
     footer {
         background-image: url("../../public/img/footer-bg.jpg");

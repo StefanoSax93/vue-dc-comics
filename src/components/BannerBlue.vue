@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/scss/main.scss";
+@import "../assets/scss/variables.scss";
 
     .bg-banner-blue {
         background-color: $first;
