@@ -1,19 +1,22 @@
 <template>
     <div>
         <div class="slide-style">
-            <img src="../../public/img/jumbotron.jpg" alt="">
+            <div v-if="currentIndex === -1">
+                <img src="../../public/img/jumbotron.jpg" alt="">
+            </div>
+            <div v-else>
+                <img :src="slideList[currentIndex].thumb" alt="" class="clickedImg">
+            </div>
         </div>
         <div class="bg-second pt-5 pb-3 text-white">
             <div class="container px-2 position-relative">
                 <div class="mini-banner text-uppercase px-3 py-1">Current Series</div>
                 <div class="row justify-content-center">
-                    <div class="col-2" v-for="(slide,id) in slideList" :key="id">
-                        <a href="" class="text-white text-decoration-none">
+                    <div class="col-2" v-for="(slide,id) in slideList" :key="id" @click="thumbClick(id)">
                             <SlideCard
                             :slide-url="slide.thumb"
                             :slide-series="slide.series"
                         ></SlideCard> 
-                        </a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-5">
@@ -108,8 +111,15 @@ export default {
         series: "Catwoman",
         type: "graphic novel"
     }
-]
+],
+currentIndex: -1,
         }
+    },
+
+    methods: {
+        thumbClick(index) {
+            this.currentIndex = index;
+        },
     }
 }
 
@@ -125,6 +135,10 @@ export default {
         max-height: 325px;
         object-fit: cover;
         object-position: top;
+    }
+    .clickedImg {
+        max-height: 500px;
+        object-position: 100% 10%;
     }
     
 }
