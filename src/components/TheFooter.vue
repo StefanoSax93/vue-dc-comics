@@ -2,7 +2,7 @@
     <footer>
         <div class="container py-4">
             <div class="row py-2">
-                <div class="col-5">
+                <div class="col-lg-5 col-md">
                     <div class="row text-white">
                         <div class="col">
                             <div class="d-flex flex-column">

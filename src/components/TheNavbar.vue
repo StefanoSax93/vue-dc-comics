@@ -9,11 +9,6 @@
             </li>
         </ul>
     </div>
-    <div class="bg-second py-5 text-white">
-        <div class="container">
-            --> Content Goes Here --
-        </div>
-    </div>
 </div>
 </template>
 

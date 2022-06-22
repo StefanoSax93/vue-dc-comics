@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <TheNavbar/>
+    <TheSlider/>
     <BannerBlue/>
     <TheFooter/>
     <BannerSignUp/>
@@ -9,6 +10,7 @@
 
 <script>
 import TheNavbar from './components/TheNavbar.vue'
+import TheSlider from './components/TheSlider.vue'
 import TheFooter from './components/TheFooter.vue'
 import BannerSignUp from './components/BannerSignUp.vue'
 import BannerBlue from './components/BannerBlue.vue'
@@ -19,8 +21,9 @@ export default {
     TheNavbar,
     TheFooter,
     BannerSignUp,
-    BannerBlue
-  }
+    BannerBlue,
+    TheSlider
+}
 }
 </script>
 
