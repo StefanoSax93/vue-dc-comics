@@ -1,7 +1,7 @@
 <template>
     <div class="bg-banner py-4">
         <div class="container d-flex align-items-center justify-content-between">
-            <a class="myButton text-uppercase">sign-up now</a>
+            <a class="myButton text-uppercase" href="#">sign-up now</a>
             <div class="d-flex gap-3">
                 <div class="fs-5">follow us</div>
                 <a v-for="(social,id) in socialList" :key="id" :href="social.href">
@@ -54,6 +54,8 @@ data() {
 
     .bg-banner {
         background-color: $third;
+        position: relative;
+        z-index: 0;
 
         .fs-5 {
             color: $first;

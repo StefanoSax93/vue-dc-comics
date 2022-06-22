@@ -177,7 +177,7 @@ data() {
         background-image: url("../../public/img/footer-bg.jpg");
         background-size: cover;
         position: relative;
-        z-index: -2;
+        z-index: 0;
 
         .bg-logo {
             position: absolute;
@@ -191,5 +191,4 @@ data() {
         }
     }
     
-
 </style>
