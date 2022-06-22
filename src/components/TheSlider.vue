@@ -8,10 +8,12 @@
                 <div class="mini-banner text-uppercase px-3 py-1">Current Series</div>
                 <div class="row justify-content-center">
                     <div class="col-2" v-for="(slide,id) in slideList" :key="id">
-                        <SlideCard
+                        <a href="" class="text-white text-decoration-none">
+                            <SlideCard
                             :slide-url="slide.thumb"
                             :slide-series="slide.series"
                         ></SlideCard> 
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-5">
@@ -136,12 +138,25 @@ export default {
         left: -0.25rem;
         transform: translateY(-50%);
 }
+.col-2 {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
 .thumb {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: top;
     margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        border-radius: 10px;;
+    }
 }
 .my-btn {
     background-color: $first;
