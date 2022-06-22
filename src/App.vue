@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <TheNavbar/>
     <BannerBlue/>
     <TheFooter/>
@@ -27,13 +27,9 @@ export default {
 <style lang="scss">
 @import "assets/scss/main.scss";
 @import "assets/scss/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: Asap Condensed, sans-serif;
 }
 </style>
