@@ -10,7 +10,7 @@
                                     <h5 class="text-uppercase">Dc comics</h5>
                                     <ul class="list-unstyled">
                                         <li v-for="(link,id) in DcComicsLinks" :key="id">
-                                            <a class="text-muted text-decoration-none text-capitalize" :href="link.href">{{link.name}}</a>
+                                            <a class="text-decoration-none text-capitalize" :href="link.href">{{link.name}}</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -18,7 +18,7 @@
                                     <h5 class="text-uppercase">shop</h5>
                                     <ul class="list-unstyled">
                                         <li v-for="(link,id) in shopLinks" :key="id">
-                                            <a class="text-muted text-decoration-none text-capitalize" :href="link.href">{{link.name}}</a>
+                                            <a class="text-decoration-none text-capitalize" :href="link.href">{{link.name}}</a>
                                         </li>
                                     </ul>                                   
                                 </div>
@@ -28,7 +28,7 @@
                             <h5 class="text-uppercase">Dc</h5>
                                 <ul class="list-unstyled">
                                         <li v-for="(link,id) in DcLinks" :key="id">
-                                            <a class="text-muted text-decoration-none text-capitalize" :href="link.href">{{link.name}}</a>
+                                            <a class="text-decoration-none text-capitalize" :href="link.href">{{link.name}}</a>
                                         </li>
                                 </ul> 
                         </div>
@@ -36,7 +36,7 @@
                             <h5 class="text-uppercase">sites</h5>
                                 <ul class="list-unstyled">
                                         <li v-for="(link,id) in sitesLinks" :key="id">
-                                            <a class="text-muted text-decoration-none text-capitalize" :href="link.href">{{link.name}}</a>
+                                            <a class="text-decoration-none text-capitalize" :href="link.href">{{link.name}}</a>
                                         </li>
                                 </ul> 
                         </div>
@@ -172,6 +172,7 @@ data() {
 </script>
 
 <style lang="scss">
+@import "../assets/scss/main.scss";
 
     footer {
         background-image: url("../../public/img/footer-bg.jpg");
@@ -188,6 +189,11 @@ data() {
 
         a {
             font-size: 14px;
+            color: grey;
+
+            &:hover {
+                color: $first;
+            }
         }
     }
     
