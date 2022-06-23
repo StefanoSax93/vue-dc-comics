@@ -1,21 +1,24 @@
 <template>
     <div>
-        <div class="slide-style">
+        <div class="slide-style position-relative">
             <div v-if="currentIndex === -1">
                 <img src="../../public/img/jumbotron.jpg" alt="">
+                <div class="mini-banner text-uppercase px-3 py-1">Current Series</div>
             </div>
             <div v-else>
                 <img :src="slideList[currentIndex].thumb" alt="" class="clickedImg">
+                <div class="mini-banner text-uppercase px-3 py-1">{{slideList[currentIndex].series}}</div>
             </div>
         </div>
         <div class="bg-second pt-5 pb-3 text-white">
-            <div class="container px-2 position-relative">
-                <div class="mini-banner text-uppercase px-3 py-1">Current Series</div>
+            <div class="container px-2">
                 <div class="row justify-content-center">
                     <div class="col-2" v-for="(slide,id) in slideList" :key="id" @click="thumbClick(id)">
                             <SlideCard
                             :slide-url="slide.thumb"
                             :slide-series="slide.series"
+                            :slide-price="slide.price"
+                            :slide-type="slide.type"
                         ></SlideCard> 
                     </div>
                 </div>
@@ -148,9 +151,9 @@ currentIndex: -1,
         font-size: 20px;
         font-weight: bold;
         position: absolute;
-        top: -3rem;
-        left: -0.25rem;
-        transform: translateY(-50%);
+        bottom: 0;
+        left: 6%;
+        transform: translateY(50%);
 }
 .col-2 {
     cursor: pointer;
@@ -158,18 +161,6 @@ currentIndex: -1,
 
     &:hover {
         transform: scale(1.05);
-    }
-}
-.thumb {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: top;
-    margin-bottom: 10px;
-    transition: all .3s ease-in-out;
-
-    &:hover {
-        border-radius: 10px;;
     }
 }
 .my-btn {
